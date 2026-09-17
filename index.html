@@ -15,7 +15,7 @@
 <header class="site-header" id="siteHeader">
   <div class="container header-inner">
     <a href="#accueil" class="logo" aria-label="WYS — Western Youth Summit">
-      <!-- REMPLACER par le chemin de votre logo WYS doré -->
+      
       <img src="images/logo-wys.png" alt="WYS Logo" class="logo-image">
       <span class="logo-text">
         <span class="logo-wys"><i>W</i><b>Y</b><i>S</i></span>
@@ -34,11 +34,7 @@
       <a href="#contact">Contact</a>
     </nav>
 
-    <!-- <a href="#communaute" class="btn btn-gold btn-nav">
-      Rejoindre la communauté
-      <span class="btn-dot" aria-hidden="true"></span>
-    </a> -->
-
+  
     <button class="burger" id="burgerBtn" aria-label="Ouvrir le menu" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
@@ -47,15 +43,28 @@
 
 <!-- Mobile off-canvas nav -->
 <div class="mobile-nav" id="mobileNav">
-  <!-- <a href="#accueil">Accueil</a>? -->
+  <div class="mobile-nav-brand">
+    <img src="images/logo-wys.png" alt="Logo WYS" class="mobile-nav-logo">
+    <div>
+      <p class="mobile-nav-kicker">WESTERN YOUTH SUMMIT</p>
+      <p class="mobile-nav-title">Explorer le WYS</p>
+    </div>
+  </div>
+
+  <a href="#accueil">Accueil</a>
   <a href="#manifeste">À propos</a>
   <a href="#piliers">Piliers</a>
   <a href="#experiences">Expériences</a>
   <a href="#communaute">Communauté</a>
   <a href="#equipe">Équipe</a>
-  <a href="#partenaires">Partenaires</a>
   <a href="#contact">Contact</a>
-  <a href="#communaute" class="btn btn-gold" style="margin-top:1.2rem;">S'inscrire maintenant</a>
+
+  <a href="#communaute" class="mobile-nav-cta">
+    <span>Rejoindre la communauté</span>
+    <svg class="wa-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+      <path d="M20.52 3.48A11.86 11.86 0 0 0 12.1 0C5.53 0 .14 5.39.14 12.03c0 2.12.56 4.19 1.62 6l-1.72 6.28 6.44-1.69A11.9 11.9 0 0 0 12.1 24c6.58 0 11.96-5.4 11.96-12.03 0-3.2-1.25-6.21-3.54-8.49Zm-8.42 18.4h-.03c-1.3 0-2.57-.35-3.68-.99l-.26-.16-3.82 1 1.02-3.72-.17-.29A9.69 9.69 0 0 1 2.3 12c0-5.33 4.34-9.67 9.7-9.67 2.59 0 5.03 1.01 6.86 2.84A9.64 9.64 0 0 1 21.8 12c0 5.33-4.34 9.67-9.7 9.67Zm5.33-7.25c-.29-.15-1.7-.84-1.97-.94-.27-.1-.46-.15-.66.15-.2.29-.76.94-.93 1.13-.17.2-.34.22-.63.08-.29-.15-1.22-.45-2.33-1.43-.86-.77-1.44-1.72-1.61-2.01-.17-.29-.02-.45.13-.6.13-.13.29-.34.44-.51.15-.17.2-.29.29-.49.1-.2.05-.37-.02-.52-.07-.15-.66-1.58-.9-2.17-.24-.58-.49-.5-.66-.51-.17-.01-.37-.01-.57-.01-.2 0-.52.08-.79.37-.27.29-1.04 1.01-1.04 2.47 0 1.45 1.07 2.86 1.22 3.06.15.2 2.11 3.22 5.11 4.51.71.31 1.27.49 1.71.63.72.23 1.38.2 1.9.12.58-.09 1.7-.69 1.94-1.35.24-.66.24-1.22.17-1.35-.07-.13-.27-.2-.56-.35Z"/>
+    </svg>
+  </a>
 </div>
 <div class="mobile-nav-backdrop" id="mobileNavBackdrop"></div>
 
@@ -96,9 +105,9 @@
 
 
     <!-- IDENTIFICATION DE L'ÉVÉNEMENT -->
-    <p class="eyebrow">
+    <!-- <p class="eyebrow">
       WESTERN YOUTH SUMMIT 2026
-    </p>
+    </p> -->
 
 
     <!-- TITRE PRINCIPAL -->
@@ -120,9 +129,9 @@
 
 
     <!-- SLOGAN -->
-    <p class="hero-tagline">
+    <!-- <p class="hero-tagline">
       THE RISE OF A NEW GENERATION
-    </p>
+    </p> -->
 
 
     <!-- LIGNE DÉCORATIVE -->
@@ -153,8 +162,10 @@
         href="#programme"
         class="btn btn-gold"
       >
-        <span>DÉCOUVRIR</span>
-        <span class="btn-arrow" aria-hidden="true">→</span>
+        <span>Rejoindre la communauté</span>
+        <svg class="wa-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <path d="M20.52 3.48A11.86 11.86 0 0 0 12.1 0C5.53 0 .14 5.39.14 12.03c0 2.12.56 4.19 1.62 6l-1.72 6.28 6.44-1.69A11.9 11.9 0 0 0 12.1 24c6.58 0 11.96-5.4 11.96-12.03 0-3.2-1.25-6.21-3.54-8.49Zm-8.42 18.4h-.03c-1.3 0-2.57-.35-3.68-.99l-.26-.16-3.82 1 1.02-3.72-.17-.29A9.69 9.69 0 0 1 2.3 12c0-5.33 4.34-9.67 9.7-9.67 2.59 0 5.03 1.01 6.86 2.84A9.64 9.64 0 0 1 21.8 12c0 5.33-4.34 9.67-9.7 9.67Zm5.33-7.25c-.29-.15-1.7-.84-1.97-.94-.27-.1-.46-.15-.66.15-.2.29-.76.94-.93 1.13-.17.2-.34.22-.63.08-.29-.15-1.22-.45-2.33-1.43-.86-.77-1.44-1.72-1.61-2.01-.17-.29-.02-.45.13-.6.13-.13.29-.34.44-.51.15-.17.2-.29.29-.49.1-.2.05-.37-.02-.52-.07-.15-.66-1.58-.9-2.17-.24-.58-.49-.5-.66-.51-.17-.01-.37-.01-.57-.01-.2 0-.52.08-.79.37-.27.29-1.04 1.01-1.04 2.47 0 1.45 1.07 2.86 1.22 3.06.15.2 2.11 3.22 5.11 4.51.71.31 1.27.49 1.71.63.72.23 1.38.2 1.9.12.58-.09 1.7-.69 1.94-1.35.24-.66.24-1.22.17-1.35-.07-.13-.27-.2-.56-.35Z"/>
+        </svg>
       </a>
 
 
@@ -162,8 +173,8 @@
         href="#communaute"
         class="btn btn-outline"
       >
-        <span>REJOINDRE</span>
-        <span class="btn-arrow" aria-hidden="true">→</span>
+        <span>VOIR LA VIDEO</span>
+        <span class="play-icon" aria-hidden="true"></span>
       </a>
 
     </div>
@@ -324,8 +335,20 @@
       </article>
     </div>
 
-    <div class="center" style="margin-top:2.4rem;">
+    <!-- <div class="center" style="margin-top:2.4rem;">
       <a href="#communaute" class="btn btn-gold">Rejoindre la communauté <span class="btn-dot"></span></a>
+       <svg class="wa-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <path d="M20.52 3.48A11.86 11.86 0 0 0 12.1 0C5.53 0 .14 5.39.14 12.03c0 2.12.56 4.19 1.62 6l-1.72 6.28 6.44-1.69A11.9 11.9 0 0 0 12.1 24c6.58 0 11.96-5.4 11.96-12.03 0-3.2-1.25-6.21-3.54-8.49Zm-8.42 18.4h-.03c-1.3 0-2.57-.35-3.68-.99l-.26-.16-3.82 1 1.02-3.72-.17-.29A9.69 9.69 0 0 1 2.3 12c0-5.33 4.34-9.67 9.7-9.67 2.59 0 5.03 1.01 6.86 2.84A9.64 9.64 0 0 1 21.8 12c0 5.33-4.34 9.67-9.7 9.67Zm5.33-7.25c-.29-.15-1.7-.84-1.97-.94-.27-.1-.46-.15-.66.15-.2.29-.76.94-.93 1.13-.17.2-.34.22-.63.08-.29-.15-1.22-.45-2.33-1.43-.86-.77-1.44-1.72-1.61-2.01-.17-.29-.02-.45.13-.6.13-.13.29-.34.44-.51.15-.17.2-.29.29-.49.1-.2.05-.37-.02-.52-.07-.15-.66-1.58-.9-2.17-.24-.58-.49-.5-.66-.51-.17-.01-.37-.01-.57-.01-.2 0-.52.08-.79.37-.27.29-1.04 1.01-1.04 2.47 0 1.45 1.07 2.86 1.22 3.06.15.2 2.11 3.22 5.11 4.51.71.31 1.27.49 1.71.63.72.23 1.38.2 1.9.12.58-.09 1.7-.69 1.94-1.35.24-.66.24-1.22.17-1.35-.07-.13-.27-.2-.56-.35Z"/>
+        </svg>
+    </div> -->
+    <div class="center" style="margin-top:2.4rem;">
+      <!-- <a href="#communaute" class="btn btn-dark"> -->
+         <a href="#communaute" class="btn btn-gold">Rejoindre la communauté <span class="btn-dot"></span></a>
+        <span class="btn-text">Rejoindre la communauté</span>
+        <svg class="wa-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <path d="M20.52 3.48A11.86 11.86 0 0 0 12.1 0C5.53 0 .14 5.39.14 12.03c0 2.12.56 4.19 1.62 6l-1.72 6.28 6.44-1.69A11.9 11.9 0 0 0 12.1 24c6.58 0 11.96-5.4 11.96-12.03 0-3.2-1.25-6.21-3.54-8.49Zm-8.42 18.4h-.03c-1.3 0-2.57-.35-3.68-.99l-.26-.16-3.82 1 1.02-3.72-.17-.29A9.69 9.69 0 0 1 2.3 12c0-5.33 4.34-9.67 9.7-9.67 2.59 0 5.03 1.01 6.86 2.84A9.64 9.64 0 0 1 21.8 12c0 5.33-4.34 9.67-9.7 9.67Zm5.33-7.25c-.29-.15-1.7-.84-1.97-.94-.27-.1-.46-.15-.66.15-.2.29-.76.94-.93 1.13-.17.2-.34.22-.63.08-.29-.15-1.22-.45-2.33-1.43-.86-.77-1.44-1.72-1.61-2.01-.17-.29-.02-.45.13-.6.13-.13.29-.34.44-.51.15-.17.2-.29.29-.49.1-.2.05-.37-.02-.52-.07-.15-.66-1.58-.9-2.17-.24-.58-.49-.5-.66-.51-.17-.01-.37-.01-.57-.01-.2 0-.52.08-.79.37-.27.29-1.04 1.01-1.04 2.47 0 1.45 1.07 2.86 1.22 3.06.15.2 2.11 3.22 5.11 4.51.71.31 1.27.49 1.71.63.72.23 1.38.2 1.9.12.58-.09 1.7-.69 1.94-1.35.24-.66.24-1.22.17-1.35-.07-.13-.27-.2-.56-.35Z"/>
+        </svg>
+      </a>
     </div>
   </div>
 </section>
@@ -454,44 +477,25 @@
   </div>
 </section>
 
+
+
+
+
+
 <!-- ================= PARTENAIRES ================= -->
 <!-- <section class="section dark partenaires" id="partenaires">
   <div class="container">
     <div class="section-head center">
       <h2 class="section-title on-dark">Ils croient en la <span class="gold">nouvelle génération</span></h2>
-    </div>
-    <div class="partenaires-grid">
-      <div class="partenaire-logo">Partenaire</div>
-      <div class="partenaire-logo">Partenaire</div>
-      <div class="partenaire-logo">Partenaire</div>
-      <div class="partenaire-logo">Partenaire</div>
-      <div class="partenaire-logo">Partenaire</div>
-      <div class="partenaire-logo">Partenaire</div>
-      <div class="partenaire-logo">Partenaire</div>
-    </div>
-    <div class="center" style="margin-top:2rem;">
-      <a href="#contact" class="btn btn-gold">Rejoindre la communauté <span class="btn-dot"></span></a>
-    </div>
-  </div>
-</section> -->
-
-
-
-
-<!-- ================= PARTENAIRES ================= -->
-<section class="section dark partenaires" id="partenaires">
-  <div class="container">
-    <div class="section-head center">
-      <h2 class="section-title on-dark">Ils croient en la <span class="gold">nouvelle génération</span></h2>
       <p class="subhead on-dark-muted">Nos partenaires et soutiens institutionnels</p>
-    </div>
+    </div> -->
 
     <!-- Carrousel défilant -->
     <div class="partenaires-slider">
       <div class="partenaires-track">
         
         <!-- Groupe 1 de logos (original) -->
-        <div class="partenaire-logo">
+        <!-- <div class="partenaire-logo">
           <img src="images/afriland.jpeg" alt="Partenaire 1">
         </div>
         <div class="partenaire-logo">
@@ -511,10 +515,10 @@
         </div>
         <div class="partenaire-logo">
           <img src="images/Commercial-Bank-Cameroun-CBC.jpg" alt="Partenaire 7">
-        </div>
+        </div> -->
 
         <!-- Groupe 2 (copie exacte pour la boucle infinie) -->
-        <div class="partenaire-logo">
+        <!-- <div class="partenaire-logo">
           <img src="images/afriland.jpeg" alt="Partenaire 1">
         </div>
         <div class="partenaire-logo">
@@ -537,15 +541,9 @@
         </div>
 
       </div>
-    </div>
-
-    <!-- Bouton CTA -->
-    <!-- <div class="center" style="margin-top:3rem;">
-      <a href="#contact" class="btn btn-gold">
-        Devenir partenaire
-        <span class="btn-dot"></span>
-      </a>
     </div> -->
+
+    
   </div>
 </section>
 
@@ -568,8 +566,8 @@
       <p class="final-gold">Le WYS crée l'espace pour le révéler.</p>
       <div class="hero-actions">
         <a href="#communaute" class="btn btn-gold">Rejoindre la communauté <span class="btn-dot"></span></a>
-        <a href="#" class="btn btn-outline">Devenir partenaire</a>
-        <a href="#" class="btn btn-outline">Nous contacter</a>
+        <!-- <a href="#" class="btn btn-outline">Devenir partenaire</a> -->
+        <!-- <a href="#" class="btn btn-outline">Nous contacter</a> -->
       </div>
     </div>
   </div>

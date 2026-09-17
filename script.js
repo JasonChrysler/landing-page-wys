@@ -49,6 +49,7 @@ function openNav(){
   backdrop.classList.add('is-open');
   burgerBtn.classList.add('is-active');
   burgerBtn.setAttribute('aria-expanded','true');
+  burgerBtn.setAttribute('aria-label','Fermer le menu');
   document.body.style.overflow = 'hidden';
 }
 function closeNav(){
@@ -56,6 +57,7 @@ function closeNav(){
   backdrop.classList.remove('is-open');
   burgerBtn.classList.remove('is-active');
   burgerBtn.setAttribute('aria-expanded','false');
+  burgerBtn.setAttribute('aria-label','Ouvrir le menu');
   document.body.style.overflow = '';
 }
 burgerBtn.addEventListener('click', () => {
